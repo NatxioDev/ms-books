@@ -1,6 +1,7 @@
 export interface BookDto {
     readonly idBook: number;
     readonly title: string;
+    readonly author: string;
     readonly description: string;
     readonly category: string;
     readonly stock: number;
