@@ -1,0 +1,39 @@
+### Get all Books
+GET http://localhost:3000/books
+Accept: application/json
+
+### Get a Book by ID
+GET http://localhost:3000/books/2
+Accept: application/json
+
+### Save a new Book
+POST http://localhost:3000/books/save
+Content-Type: application/json
+
+{
+  "title": "Test Add",
+  "author": "Test Add",
+  "description": "Test Add",
+  "category": "Test Add",
+  "stock": 15,
+  "price": 32,
+  "status": 1
+}
+
+### Update a book
+PUT http://localhost:3000/books/4
+Content-Type: application/json
+
+{
+  "title": "Test Update",
+  "author": "Test Update",
+  "description": "Test Update",
+  "category": "Test Update",
+  "stock": 15,
+  "price": 32,
+  "status": 1
+}
+
+### Delete book by ID
+DELETE http://localhost:3000/books/3
+Accept: application/json
