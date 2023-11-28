@@ -1,27 +1,32 @@
 ### Get all Books
-GET http://localhost:3000/books
+GET http://localhost:4000/books
 Accept: application/json
 
 ### Get a Book by ID
-GET http://localhost:3000/books/2
+GET http://localhost:4000/books/2
 Accept: application/json
 
 ### Save a new Book
-POST http://localhost:3000/books/save
+POST http://localhost:4000/books/save
 Content-Type: application/json
 
 {
-  "title": "Test Add",
-  "author": "Test Add",
-  "description": "Test Add",
-  "category": "Test Add",
-  "stock": 15,
-  "price": 32,
+  "title": "Arco Iris",
+  "author": "Juan Salvador Gaviota",
+  "description": "A tale of love, wealth, and tragedy during the Roaring Twenties.",
+  "category": "Classic",
+  "stock": 20,
+  "price": 30.99,
   "status": 1
 }
 
+
+
+
+
+
 ### Update a book
-PUT http://localhost:3000/books/4
+PUT http://localhost:4000/books/4
 Content-Type: application/json
 
 {
@@ -35,5 +40,5 @@ Content-Type: application/json
 }
 
 ### Delete book by ID
-DELETE http://localhost:3000/books/3
+DELETE http://localhost:4000/books/3
 Accept: application/json
